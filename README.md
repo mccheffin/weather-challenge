@@ -1,6 +1,6 @@
 # AirDNA Front End Code Exercise
 
-Hey there! We'd like you to work on a simple React app that fetches and displays the weather forecast from an API based on a user's search. The API doesn't support CORS, so you'll find it [proxied](https://create-react-app.dev/docs/proxying-api-requests-in-development) through create-react-app. You can hit the API by making a request to `/api/...`.
+Hey there! We'd like you to work on a simple React app that fetches the weather forecast based on a user's location search input and displays the forecast in the UI. The API doesn't support CORS, so you'll find it [proxied](https://create-react-app.dev/docs/proxying-api-requests-in-development) through create-react-app. You can hit the API by making a request to `/api/...`.
 The API you'll be using can be referenced here: [MetaWeather](https://www.metaweather.com/api/)
 
 There are 2 endpoints you'll need:
@@ -12,11 +12,10 @@ There are 2 endpoints you'll need:
 
 The temperature comes back from the API in celsius. You'll find a conversion function in `src/utils/conversions`
 
-Here's a list of priorities for you. Please don't spend more than 2-3 hours. We're looking for how you approach problems, architect the app, and organize your code. We're not as concerned with a 100% polished UI.
+Please don't spend more than 2-3 hours. We're looking for how you approach problems, architect a feature, and write production-grade code.  The UI should be responsive and use modern CSS practices, but doesn't need to be visually impressive. Some priorities:
 
 1. Working location search and fetching of weather data
-2. Handle errors within the UI (for example, search returns no results)
-3. Extended forecast in UI
-4. Visual styles
+2. Handle errors within the code and UI (for example, search returns no results)
+3. Extended forecast displayed in UI
 
-When you have completed this please push to a repo on Github (or Gitlab) and either send us a public link or add `@ndstephens` as a collaborator if you'd rather make the repository private.
+When you have completed this please push to a repo on Github (or Gitlab) and either send us a public link or add `ndstephens` as a collaborator if you'd rather make the repository private.
