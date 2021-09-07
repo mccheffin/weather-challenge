@@ -19,3 +19,9 @@ Please don't spend more than 2-3 hours. We're looking for how you approach probl
 3. Extended forecast displayed in UI
 
 When you have completed this please push to a repo on Github (or Gitlab) and either send us a public link or add `ndstephens` as a collaborator if you'd rather make the repository private.
+
+## My Solution
+
+The first thing I did was clarify what was needed in the project and what the acceptance criteria are.  Learning that this did not need to be deployed and what is show on the screen is more or less up to me I took it as an opportunity to build a app that could be useful for me.  
+
+The only things I really care about in a weather service are the current temperature, todays high and low tempatures, and the weekly forcast of weather and tempatures. So I ran with that and made an applicaiton that did just that.
