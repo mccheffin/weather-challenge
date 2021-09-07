@@ -37,8 +37,8 @@ const LocationInput = () => {
 
   return <StyledForm onSubmit={handleSubmit}>
     <StyledInput 
-      placeholder="Search location by name" 
-      type="text" 
+      placeholder="denver" 
+      type="text"
       value={location} 
       onChange={e => setLocation(e.target.value)}
       error={error}

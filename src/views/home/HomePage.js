@@ -28,7 +28,7 @@ const HomePage = () => {
       <TodaysWeatherCard  maxTemp={weatherList[0].max_temp} minTemp={weatherList[0].min_temp} weatherType={weatherList[0].weather_state_abbr} currentTemp={weatherList[0].the_temp}/> 
     : null}
     <StyledForcastContainer>
-      {renderForcast(renderForcast())}
+      {renderForcast()}
     </StyledForcastContainer>
   </StyledBody>
 }
