@@ -10,7 +10,7 @@ export const StyledWeatherCard = styled.div`
   border-radius: 10px;
   background-color: white;
   @media (max-width: 940px) {
-    width: 240px;
+    width: 260px;
   }
 `;
 

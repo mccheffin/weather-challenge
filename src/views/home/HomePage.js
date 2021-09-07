@@ -11,12 +11,10 @@ const HomePage = () => {
   const {weatherList} = useContext(WeatherContext)
 
   const renderForcast = () => {
-    console.log(weatherList);
     if(weatherList.length <= 0){
       return null;
     }
     return weatherList.slice(1).map((weather, index) => {
-      console.log("Weather event: ", weather)
       return <WeatherForecastCard key={index} maxTemp={weather.max_temp} minTemp={weather.min_temp} weatherType={weather.weather_state_abbr} date={weather.applicable_date}/>
     })
   }

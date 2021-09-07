@@ -8,8 +8,8 @@ const WeatherCard = ({maxTemp, minTemp, weatherType, date}) => {
     <span> {getNameOfDay(date)} </span>
     <StyledWeatherImage src={getWeatherIcon(weatherType)}/>
     <StyledTempatureContainer>
-      <span>{`${toFahrenheit(maxTemp).toFixed(0)} °F`}</span>
-      <span>{`${toFahrenheit(minTemp).toFixed(0)} °F`}</span>
+      <span>{`${toFahrenheit(maxTemp)} °F`}</span>
+      <span>{`${toFahrenheit(minTemp)} °F`}</span>
     </StyledTempatureContainer>
   </StyledWeatherCard>
 }

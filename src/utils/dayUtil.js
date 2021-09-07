@@ -9,8 +9,9 @@ const days = {
 }
 
 export const getNameOfDay = (date) => {
-  console.log(date);
+  if(!date.match(/^\d{4}-\d{2}-\d{2}$/)){
+    return null;
+  }
   const dayOfWeek = new Date(date).getDay();
-  console.log(days[dayOfWeek])
   return days[dayOfWeek];
 }

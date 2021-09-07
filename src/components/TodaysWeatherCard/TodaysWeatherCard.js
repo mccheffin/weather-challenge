@@ -6,10 +6,10 @@ const TodaysWeatherCard = ({maxTemp, minTemp, weatherType, currentTemp}) => {
   return <StyledWeatherCard>
     <StyledTitle>Today</StyledTitle>
     <StyledWeatherImage src={getWeatherIcon(weatherType)}/>
-    <StyledCurrentTemp> {`${toFahrenheit(currentTemp).toFixed(0)} °F`} </StyledCurrentTemp>
+    <StyledCurrentTemp> {`${toFahrenheit(currentTemp)} °F`} </StyledCurrentTemp>
     <StyledTempatureContainer>
-      <span>{`H: ${toFahrenheit(maxTemp).toFixed(0)} °F`}</span>
-      <span>{`L: ${toFahrenheit(minTemp).toFixed(0)} °F`}</span>
+      <span>{`H: ${toFahrenheit(maxTemp)} °F`}</span>
+      <span>{`L: ${toFahrenheit(minTemp)} °F`}</span>
     </StyledTempatureContainer>
 
   </StyledWeatherCard>

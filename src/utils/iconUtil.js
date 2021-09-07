@@ -9,7 +9,7 @@ import ShowersIcon from '../img/showers_icon.svg';
 import SleetIcon from '../img/sleet_icon.svg';
 import SnowIcon from '../img/snow_icon.svg';
 
-const weatherIcons = {
+export const weatherIcons = {
   sn: SnowIcon,
   sl: SleetIcon,
   h: HailIcon,
@@ -23,5 +23,8 @@ const weatherIcons = {
 }
 
 export const getWeatherIcon = (icon_code) => {
+  if(!(icon_code in weatherIcons)){
+    return null
+  }
   return weatherIcons[icon_code];
 }

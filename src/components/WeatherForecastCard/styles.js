@@ -11,7 +11,7 @@ export const StyledWeatherCard = styled.div`
   background-color: white;
   @media (max-width: 940px) {
     flex-direction: row;
-    width: 240px;
+    width: 260px;
     height: 60px;
   }
 `;
