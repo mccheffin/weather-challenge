@@ -37,7 +37,7 @@ const LocationInput = () => {
 
   return <StyledForm onSubmit={handleSubmit}>
     <StyledInput 
-      placeholder="City or Coordinates" 
+      placeholder="Search location by name" 
       type="text" 
       value={location} 
       onChange={e => setLocation(e.target.value)}
@@ -48,7 +48,7 @@ const LocationInput = () => {
     </StyledSearchButton>
 
     {error ? <StyledError>
-      There was a problem: Make sure you searched for a city or coordinates
+      There was a problem: Make sure you spelled your search correctly
     </StyledError> : null}
   </StyledForm>
 }
